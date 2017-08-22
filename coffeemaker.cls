@@ -5,7 +5,7 @@ Class demo.coffeemaker Extends (%Persistent, %Populate, %XML.Adaptor)
 
 Property CoffeemakerID As %Integer [ Calculated, SqlComputeCode = {Set {*} = {ID} 
 }, SqlComputed ];
-
+// The Name Property should be a string
 Property Name As %String;
 
 Property Brand As %String;
